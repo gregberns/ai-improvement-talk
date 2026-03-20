@@ -32,6 +32,12 @@
 - Structure: you have this symptom/pain point? Here's a possible solution to start experimenting with.
 - Don't limit yourself to "spot fixes"/small tweaks. Use these as a way to examine your 'engineering process architecture'. You are a system - understand how you - the system - works today, then use your eng skills to improve those processes. Meta-shit.
 
+### Reference: Where are you on the coding evolution?
+- Others have mapped out the progression of how developers adopt AI agents:
+  - [Dan Shapiro's Five Levels](https://www.danshapiro.com/blog/2026/01/the-five-levels-from-spicy-autocomplete-to-the-software-factory/) — from Spicy Autocomplete to the Software Factory
+  - [Yegge's Developer Agent Evolution Model](https://justin.abrah.ms/blog/2026-01-08-yegge-s-developer-agent-evolution-model.html) — 8 stages from zero AI to building your own orchestrator
+- Where are you? Be honest. The rest of this talk maps pain points to where you are and gives you the next step.
+
 ## Section 2: The Foundation - Stop Experimenting
 - Problem: "Tokens are expensive / I want something cheaper / I like OSS"
 - Stop model-hopping. Pick one. Claude Opus, HIGH Effort. Tune it in.
@@ -117,7 +123,7 @@
 
 ## Section 7: Session Continuity
 
-### If you MUST continue a session
+### If you MUST compact a session
 - Idea: Create two uncommitted files: STATUS.md + TASKS.md. Before compaction, tell it to update those files. They track where you're at and will survive compaction.
 - (Hint: implement a hook or command to do this)
 - At 10% before compaction: stop, save state, write compaction summary, copy, clear, paste and go.
@@ -166,35 +172,68 @@
 
 ## Section 9: Implement With Loops - Don't Just Fire And Forget
 
+### Symptoms
+- Agent doesn't implement parts of the spec
+- Spec actually has issues - inconsistencies, gaps, things that don't work the way you envisioned
+
+Once you're using specs, you'll find they don't always turn out how you'd like. Two distinct problems:
+
 ### Problem 1: Agent doesn't implement the spec
-- Solution: Ralph Loop - implement a little, check, write more, check, loop - until plan resembles spec
+- The spec was well defined, but parts are missing from the implementation
+- Solution: Ask Claude about the "Ralph Loop" - start using it to implement
+- Contained in oh-my-claudecode
+- Think: implement a little, check what was implemented against the spec, write more, check, loop - until the implementation resembles the spec
 
-### Problem 2: Spec actually has issues
-- Solution: Cross Reference/Forward-Backward on specs - review techniques
-- There may be gaps in your spec - that's ok, review surfaces them
+### Problem 2: Implementation isn't what you wanted - Spec has inconsistencies
+- The implementation followed the spec... but the spec itself had gaps or contradictions
+- Solution: Multi-agent review of the spec before implementation - with comprehensive steps
+- 3 agents reviewing from different angles:
+  - spec→plan (forward coverage)
+  - plan→spec (reverse traceability)
+  - plan→context (codebase alignment)
+- See: [Xexr gt-toolkit Stage 6: Plan Review](https://github.com/Xexr/gt-toolkit/blob/main/formulas/README.md#stage-6-plan-review)
 
-## Section 10: Encode Your Workflows
-- Mindset shift: Stop thinking about what you like/don't like. Think about ENCODING your process.
-- You've spent YEARS tuning your workflow. It works. Formalize it, encode it, write it down.
+## Section 10: Meta - Encode Your Process, Workflows, and Thinking
+
+### Next Steps
+- Engineer your actual development workflow and thinking processes
+
+### The Idea
+- You have a process for feature development - what is it? How can Claude mimic it?
+- Define it. Encode it. Have Claude help you formalize it.
+- If Claude isn't following the process - work with it to define and refine until it does.
+
+### Why This Matters
+- This forces you to think really hard about what you actually do
+- You've spent years tuning your workflow - now make it explicit and reproducible
+
+### Example: This Presentation
+- This talk was built using the process: brain dump → refine each section → iterate → refine
+- Essentially a Ralph Loop applied to content, not code
+
+### Getting Started
 - Start by creating a command - good way to get your feet wet
 - "We're going to write this feature AND encode the process I use, so we can replicate it next time"
-- Why not off the shelf? If you don't know how it works and you aren't using it now, installing it won't help.
+- Why not something off the shelf? If you don't know how it works and you aren't using it now, installing it won't help.
 
-## Section 11: The Illustration - The Pyramid
-- Base: Excellent model (stop experimenting)
-- Level 2: Coding agent
-- Level 3: Tuned-in coding agent (rules, hooks, CLAUDE.md + AGENT.md files - PLURAL)
-- Level 4: Encoding Your Workflows (more practices into rules and CLAUDE.md)
-- Level 5: Using Sub Agents
-- Level 6: Write Specs
-- Level 7: Refine Specs + Refine Post-Implement
+## Section 11: The Progression
+
+It doesn't happen in a day - one step at a time.
+
+- **Step 1 (Base): Excellent model** — Stop model-hopping. Best model, max effort, stop counting tokens.
+- **Step 2: Coding agent** — Stick with one agent. Table stakes.
+- **Step 3: Tuned-in coding agent** — Encode guardrails. Rules, hooks, CLAUDE.md, AGENT.md files.
+- **Step 4: Evolve project metadata** — Analyze sessions, generalize learnings, encode what works.
+- **Step 5: Sub agents** — Delegate. Be the orchestrator.
+- **Step 6: Session hygiene** — Focus on dense sessions.
+- **Step 7: Write specs** — Become the architect. Brain dump, iterate, formalize.
+- **Step 8: Refine specs + implement loops** — Multi-agent spec review. Ralph Loop to close gaps.
+- **Step 9: Meta** — Examine your mental development model.
 
 ## Conversation Examples To Include
 - Kuba: "I work in a loop, ..." (REMINDER: grab that conversation) - illustration of hand-holding vs encoding
 - Meta: this presentation itself was built using the braindump → organize → refine process
 
 ## Open Questions
-- Pyramid vs Yegge levels vs Shapiro levels - how to reconcile/reference?
-- Where does the pyramid illustration best fit - early framing or closing summary?
 - Spec Review vs Code Review ordering - which first?
 - Git hook example - where does it best fit in the flow?

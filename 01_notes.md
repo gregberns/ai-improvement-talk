@@ -292,3 +292,70 @@ Eng #3:
 
 ---
 
+## Entry 12 - Multiple Refinements Pass
+
+### Section 11 (The Progression)
+- Renamed from "The Illustration - The Pyramid" to "The Progression"
+- Added intro line: "It doesn't happen in a day - one step at a time."
+- Step 2 changed: "Table stakes. Agent writing code for you." → "Stick with one agent. Table stakes."
+- Added Step 6: "Session hygiene — Focus on dense sessions."
+- Added Step 9: "Meta — Examine your mental development model."
+- Now 9 steps total (was 7)
+
+### Section 1 (Intro)
+- Added "Reference: Where are you on the coding evolution?" subsection
+- Incorporated Shapiro and Yegge links directly into intro framing
+- Resolved open question: "Pyramid vs Yegge levels vs Shapiro levels" — referenced in intro
+- Resolved open question: "Where does the pyramid illustration best fit" — dropped, no image
+
+### Section 7 (Session Continuity)
+- Changed "If you MUST continue a session" → "If you MUST compact a session"
+
+---
+
+## Entry 11 - Section 11 Refinement (The Pyramid)
+
+### Changes
+- "Level" → "Step" throughout
+- Added a one-line blurb to each step connecting it back to its corresponding section content
+- Each blurb captures the core message of that step so the pyramid works as a standalone summary
+
+---
+
+## Entry 10 - Section 10 Refinement (Encode Your Process)
+
+### Reframe
+- Title changed: "Encode Your Workflows" → "Meta - Encode Your Process, Workflows, and Thinking"
+- Positioned as a "next steps" section rather than a problem/solution
+- Core message: formalize your actual dev workflow into Claude - define it, encode it, refine it
+
+### Key addition
+- "This forces you to think really hard about what you actually do" - the meta-cognition angle
+- Example: this presentation itself used the process (brain dump → refine → iterate → refine = Ralph Loop for content)
+
+### Kept
+- "Start with a command" as entry point
+- "Off the shelf won't help if you don't understand it" point
+
+---
+
+## Entry 9 - Section 9 Refinement (Implement With Loops)
+
+### Structure
+- Added proper Symptoms framing: agent doesn't implement parts of spec + spec itself has issues
+- Framing line: "Once you're using specs, you'll find they don't always turn out how you'd like"
+- Split into two distinct problems with separate solutions
+
+### Problem 1: Agent doesn't implement the spec
+- Spec was well defined but implementation has missing parts
+- Solution: Ralph Loop (from oh-my-claudecode)
+- Kept light on explanation - tell audience to ask Claude about it
+
+### Problem 2: Spec has inconsistencies
+- Implementation followed the spec, but the spec was the problem
+- Solution: Multi-agent spec review before implementation
+- Referenced Xexr gt-toolkit Stage 6: Plan Review
+- 3 review angles: spec→plan (forward coverage), plan→spec (reverse traceability), plan→context (codebase alignment)
+
+---
+
