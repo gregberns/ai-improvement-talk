@@ -76,7 +76,9 @@ $ make ci
   [PASS]  [9.6/10] Twin fidelity (3.9s)
   [PASS]  [10/10] Test count guardrail (7.7s)
   [PASS]  [FINAL] Diff coverage (0.4s)
-  
+
+  {{ERRORS HERE}}
+
   CI RESULT: PASS (1m 45s)
   Summary written to .ci/summary.txt
   Full logs: .ci/last-run.log
