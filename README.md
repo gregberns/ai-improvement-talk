@@ -23,6 +23,12 @@ If you're not motivated to push hard on improving your AI skills, and you still 
 
 ---
 
+## Videos
+
+* [fundamental skills and knowledge you must have in 2026 for SWE](https://www.youtube.com/watch?v=Jr2auYrBDA4)
+
+---
+
 Below are some additional things I've added
 
 ## Ralph Loop
