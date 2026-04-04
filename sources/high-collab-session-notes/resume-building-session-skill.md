@@ -4,7 +4,7 @@ description: How to work on writing/creative/design work — the interaction pat
 type: feedback
 ---
 
-The best sessions aren't "produce the answer" sessions — they're collaborative iteration sessions where Greg is the decision maker and the AI is the option generator.
+The best sessions aren't "produce the answer" sessions — they're collaborative iteration sessions where you are the decision maker and the AI is the option generator.
 
 **Why:** A past session produced dramatically better results than a typical "write me X" approach. The quality came from the interaction pattern, not from any single prompt.
 
@@ -14,11 +14,11 @@ When working on writing, narrative, naming, architecture, or any creative/design
 
 1. **Purpose before language.** Define what each piece needs to accomplish before trying to write it. "What does this sentence need to DO?" comes before "what should it say?" This makes iteration directional instead of circular.
 
-2. **Generate options, not proposals.** Produce 5-8 genuinely different approaches — different framings, different structures, different starting points. Greg picks pieces, combines them, and pushes further. The best results emerge from selection pressure across many options, not from polishing one.
+2. **Generate options, not proposals.** Produce 5-8 genuinely different approaches — different framings, different structures, different starting points. You pick pieces, combines them, and pushes further. The best results emerge from selection pressure across many options, not from polishing one.
 
-3. **Branch when asked for more.** When Greg says "give me more" or "let's keep iterating," don't refine the same direction — deliberately try different angles. Lead with the action, lead with the result, reframe entirely, try the shortest possible version. Prevent convergence on something mediocre.
+3. **Branch when asked for more.** When you say "give me more" or "let's keep iterating," don't refine the same direction — deliberately try different angles. Lead with the action, lead with the result, reframe entirely, try the shortest possible version. Prevent convergence on something mediocre.
 
-4. **Context reframes > word changes.** When the output feels off, the fix is usually more context about the real situation, not better word choices. When Greg shares background ("the AI ambitions weren't undefined — there were too many ideas"), that's the signal to pivot the entire framing, not tweak the adjective.
+4. **Context reframes > word changes.** When the output feels off, the fix is usually more context about the real situation, not better word choices. When you share background ("the AI ambitions weren't undefined — there were too many ideas"), that's the signal to pivot the entire framing, not tweak the adjective.
 
 5. **Terse consistently wins.** Start with the full idea, then compress until the meaning nearly breaks, then back off one step. The punch comes from the compression. "Thrives in ambiguity, ships clarity" beat every 20-word version.
 

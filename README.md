@@ -1,10 +1,10 @@
 # Improving Your AI Game
 
-When using a hammer, if after using it if your thumb hurts, is it the hammers fault?
+When using a hammer, if after using it your thumb hurts, is it the hammers fault?
 
-If you're frustrated by Claude's consistency... consider its the operator - not the tool. 
+If you're frustrated by Claude's consistency... consider that its the operator - not the tool.
 
-You can get better.
+You can get better though!
 
 Much better, and quickly.
 
@@ -89,6 +89,3 @@ $ make ci
   Summary written to .ci/summary.txt
   Full logs: .ci/last-run.log
 ```
-
-
-
