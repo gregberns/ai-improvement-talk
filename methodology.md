@@ -73,12 +73,41 @@ This is the central artifact. Rules:
 
 ## Content Framing
 
-Each article/idea targets a **discrete action** a developer can take:
+### Article Template (most articles)
 
-- **Symptom:** What the developer is experiencing ("Claude keeps ignoring my conventions")
-- **Root cause:** What's actually going on ("Your project metadata doesn't encode your conventions")
-- **Action:** What to do about it ("Set up CLAUDE.md with your conventions. Here's how...")
+1. **Symptom** — What the developer is experiencing. Identify the behavior/pain point.
+2. **What to change** — The behavior change. Not "understand this" but "do this differently." Get the change happening first.
+3. **Reinforcing patterns** — Additional techniques that support and deepen the change.
+4. **Why what you were doing wasn't working** — Now explain the root cause. The "why" comes AFTER the behavior change, not before. People don't need to understand to start improving.
+5. **Why the alternative works better** — Deepen understanding for those who want it.
 
-Some articles will be introductory/framing (the world is changing, this is hard, here's the mindset). Then we stop complaining and get to work.
+Framing/intro articles (001, 002) don't follow this template — they set the field.
+Some context management articles may be "push further" pieces that build on a prior article rather than posing a new problem.
 
-For developers operating in a very manual mode ("telling the model to modify a specific function in a specific file" as their primary pattern) — we need to address this early. The challenge is describing what they're doing wrong when we're not doing it ourselves anymore. Frame it as: "If this is how you work, here's why results feel inconsistent, and here's the shift."
+### The Hidden Arc
+
+The series is walking developers toward **spec-driven development** without them realizing it. Each article moves them one step closer:
+- Early articles feel like "tips" — better model, project metadata, session hygiene
+- But each one quietly builds the foundation for spec-driven work
+- By the time specs are explicitly introduced, devs have already been doing pieces of it
+- Then it clicks — they see it in their own process
+
+This is more effective than "you should write specs because X." We create the conditions where spec-driven feels like the obvious next step, not a mandate.
+
+Build cohesive analogies across articles that reinforce this progression. The reader shouldn't feel lectured — they should feel like they're discovering a better way to work.
+
+### Audience and Scope
+
+- Primary audience: engineers working within Claude Code / Codex / terminal TUI agents
+- Not targeting code-completion-level users yet (may do on-ramp articles later)
+- Disclaimer on articles: "We'll talk about Claude, but these patterns apply to any coding agent"
+- Some early articles don't require a specific tool at all
+- Future possibility: articles for IDE-level users walking them toward TUI ("You can start in your IDE, but we're going to walk you toward using the TUI")
+
+### The Directive Anti-Pattern
+
+Many users interact with models in a "directive" style — procedural commands, specific changes, step-by-step instructions. This forces models into a myopic mode where they execute exactly what's asked with no broader judgment. To evoke higher capabilities, you need models planning and building specs, not just executing commands.
+
+Research: Anthropic Economic Index (March 2026) hints at interaction styles. Barke et al. "Grounded Copilot" found two modes — "acceleration" (directive, fine for boilerplate) vs "exploration" (collaborative, better for complex work).
+
+The article on this should define anti-patterns — prompts or interaction patterns that won't deliver effective results — and redirect toward the collaborative/spec-driven approach the rest of the series builds toward.

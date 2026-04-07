@@ -21,10 +21,14 @@ Category tags: `[foundation]` `[metadata]` `[context]` `[workflow]` `[quality]` 
 - [011-implement-with-loops](011-implement-with-loops/) `[workflow]` — Ralph Loop for implementation. Multi-agent review for spec gaps.
 - [012-encode-your-process](012-encode-your-process/) `[workflow]` `[mindset]` — Meta: define your workflow, encode it, formalize it. Create commands.
 - [013-progression-overview](013-progression-overview/) `[structure]` — The 9-step progression from the talk. Structural backbone for the series.
+- [014-code-isnt-right](014-code-isnt-right/) `[workflow]` `[mindset]` — "I told it to implement X and it didn't do it right." The sneaky spec — brainstorm, research, plan together, then implement.
+- [015-it-missed-things](015-it-missed-things/) `[workflow]` — "It says it's done but stuff is missing." Self-review against the plan. Plants the seed for the Ralph Loop.
+- [016-agent-wont-follow-process](016-agent-wont-follow-process/) `[workflow]` `[metadata]` — "It won't follow the process I told it!" Where rules/hooks get introduced — to solve git workflow, test running, etc.
 
 ## Unrefined — Index Only
 
 - **If your primary mode is dictating specific changes to specific files** `[mindset]` — Address devs using AI as fancy find-and-replace. You're leaving value on the table. Frame without condescension. Related: Eng #2 quote "going over things function by function."
+- **Brownfield convention conflicts — old patterns vs new patterns** `[metadata]` — When your codebase has legacy patterns AND new patterns and you only want new conventions followed. Needs explicit metadata: "pattern X exists in /legacy, all new code uses pattern Y, never use X in new code." Might be a sub-article of 005 or its own piece for more experienced devs.
 - **"Fix the layout" — the directive pattern and why it fails** `[mindset]` — Directive style forces models into myopic mode. Specificity without context. Need to find Anthropic research.
 - **Specificity without context vs. context with intent** `[mindset]` — "Change function X to do Y" (directive) vs. "we have this problem because of Z" (context + intent). The second lets the model use judgment.
 - **Problem 1: Getting agents to perform consistently** `[framing]` — What early articles address. The "it works sometimes" frustration.
@@ -51,10 +55,11 @@ Category tags: `[foundation]` `[metadata]` `[context]` `[workflow]` `[quality]` 
 - **Using review agents for different perspectives** `[collab]` — Architect, security, performance, UX review.
 - **Terse consistently wins (in code too)** `[collab]` — Compress. Simplest that works.
 - **High-collaboration mode as a skill** `[collab]` `[structure]` — Resume session patterns as teachable mode.
-- **Symptoms-first navigation** `[structure]` — Index by symptom → article. Could be interactive.
+- **Symptoms-first navigation / entry point routing** `[structure]` — Critical: devs need to start at the right article, not page 1. "Here are symptoms/behaviors — once you see one you're exhibiting, start there." If you're not model hopping, skip that article. This might be the actual landing page or intro piece — a behavior checklist that routes you into the series at the right point.
 - **Publishing structure that supports growth** `[structure]` — Insert articles without disrupting published.
-- **"Buying intelligence" through tokens** `[mindset]` — Tokens = purchasing better outcomes. 5 options, select best.
-- **Finding the Anthropic research on directive vs. collaborative patterns** `[mindset]` — Research task.
+- **"Buying intelligence" through tokens** `[mindset]` — Tokens = purchasing better outcomes. 5 options, select best. Video reference: https://youtu.be/-bQcWs1Z9a0?si=-2t7svUMBIde-snW
+- **Finding the Anthropic research on directive vs. collaborative patterns** `[mindset]` — PRIMARY SOURCE: https://www.anthropic.com/research/economic-index-march-2026-report (hints at interaction styles, directive/procedural vs planning). Also: Anthropic "Claude Code Best Practices" blog post, Barke et al. "Grounded Copilot" 2023 (acceleration vs exploration modes), Schulhoff et al. "The Prompt Report" 2024.
+- **Orchestration overview** `[workflow]` — Intro to multi-agent orchestration: what it is, why it matters, the landscape of projects/tools. Later-stage — after sub-agents are comfortable. Reference: https://youtu.be/eT1F2BAZJ64?si=63_x0PRLcls9P4Nr
 
 ---
 
