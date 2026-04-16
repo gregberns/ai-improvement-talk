@@ -1,23 +1,55 @@
 # The Code Isn't Right
 
-You told it exactly what to do. Add a filter to the REST API. Wire up the new service. Refactor the auth flow. It did something — but not the right thing. Wrong approach, wrong patterns, wrong structure. You spent the rest of the day cleaning up after it. So you try again, more detail this time. Spell out every step. It still misses. You're writing more instructions than code at this point, and the code it produces still isn't what you'd have written. The more precisely you tell it what to do, the worse it gets.
+*This is a series about moving your coding agent from intern to senior developer. It's for devs who are already using agents but not getting the results they keep hearing about.*
 
-**Why:** When you give step-by-step instructions, the model switches into execution mode. You said what to do, so it does exactly that — no judgment, no exploration, no broader reasoning. It doesn't ask whether your approach is right. It doesn't look at how the rest of the codebase handles this. It just executes your instructions, filling in the dozens of micro-decisions you didn't specify — which patterns to follow, how to structure it, what to name things, how to handle edge cases — with whatever interpretation it lands on. You think you gave complete instructions. You didn't. Nobody does. The model in execution mode doesn't ask. It just goes.
+*Each article targets a specific problem. What you're experiencing, why it's happening, and what to do about it — with a prompt you can run immediately.*
 
-What you actually want is the model in reasoning mode — exploring the code, understanding patterns, figuring out the right approach, and writing its own implementation plan. To get that, you need to stop telling it WHAT to do and start telling it WHY something needs to change and WHERE the relevant code lives. Give context and intent, not steps.
+*The articles build on each other. If you haven't gone through the previous articles, consider starting at the beginning.*
 
-**Fix:** Think of the agent as a new developer who just joined your team. You got a half-baked ticket from the PM. Your job: brief this developer. Tell them about the problem — why the change matters, what area of the codebase it touches, any constraints they should know about. Don't tell them exactly what to do. Let them figure it out.
+Your PM says you need a new REST endpoint. Straightforward — there are endpoints that do almost the same thing. You tell your agent what to build.
 
-Open a session and use this prompt, appending your own context about the change after it:
+"Add a new REST endpoint POST /api/users/invite. Check if the user exists, generate an invitation token, send an email through the notification service, return the status. Use the auth middleware for admin-only access. Add tests."
 
-> Here's a change I need to make. Before writing any code: explore the relevant code and ask clarifying questions until you understand the full picture. Write a plan, then we'll dig into the details one section at a time. Once the plan looks good, write a detailed spec with implementation instructions and code examples to a file. Have an agent review the spec and fix any issues. Break the spec into ordered, discrete tasks in a file, have another agent validate them and fix any issues, then ask me before proceeding. Implement one task at a time. If I don't give you the reason for a change, ask if the context would be helpful. Here's what I need:
+Good instructions. Covers all the pieces. Should be straightforward.
 
-Then describe the problem. Not the solution — the problem. What's broken, what's needed, why it matters. Mention the area of the codebase if you know it. Add constraints. Then stop. Let the agent do what it's good at: exploring code, finding patterns, and reasoning through an approach.
+The agent finishes and it's a mess. Existing patterns ignored. Conventions missed. Code that reinvents things that already exist.
 
-**Your role:** Review the plan before any code gets written. This is where you catch misalignment — wrong approach, missed constraints, bad assumptions. It's dramatically cheaper to correct a plan than to untangle an implementation. If the plan doesn't match your mental model, say so. If you don't understand why it chose an approach, ask. Get the plan right first.
+You try again — more detail, every step spelled out. Somehow its worse.
 
-**How it works:** When the model writes its own implementation plan, it's done real work to get there. It's explored the codebase and found actual patterns. It's identified the files, functions, and conventions that matter. It's reasoned through the approach before writing a single line of code. The plan is in language the model understands — because it wrote it. When it then implements from that plan, it's following its own detailed reasoning, not your incomplete shorthand.
+**Symptom:** The agent builds something — and you spend the next hour undoing it. Wrong approach, wrong patterns, wrong conventions. The output doesn't match what you'd have written. You think: "Half the time I'd be faster without the agent."
 
-You're not writing more — you're writing earlier. And you're writing the right thing: context about why and where, instead of incomplete instructions about what.
+**Why:** When you tell the agent to "go implement this," it executes. It doesn't question your approach, doesn't explore the codebase, doesn't look at how similar things are already done. It just does what you said.
 
-**Resist the urge:** The hardest part is not dictating the solution. You know how you'd implement it. You want to say "add a method here, call it from there, update this file." Don't. Every time you do, you're pushing the model out of reasoning mode and back into execution mode. Give it the problem. Let it find the approach. Correct the plan if it's wrong. That's the loop.
+"Add a new REST endpoint" is a command. Commands put the agent into execution mode. What you want is reasoning mode.
+
+The trigger: replace "Add a new REST endpoint" with "Think through how we would add a new REST endpoint."
+
+**Fix:** Treat the agent like a senior developer who just joined your team. They're capable — they just need context. Explain your intent, not the steps. Describe the problem, not the solution.
+
+Grab your next feature. Describe what you're trying to achieve. Mention gotchas, old patterns, anything you'd tell a new smart teammate. Append that to this prompt:
+
+> Below is the next task we need to work on. Let's work through this together — gathering info, clarifying the challenge, and digging into the details — step by step. Once we've agreed on the plan, write a spec with explicit implementation instructions and save it to a file. Have an agent review the spec and correct any issues. Break the spec into discrete ordered tasks, write them to a file, and have them reviewed. Delegate implementation to a sub-agent — one task at a time — and act as the orchestrator. Before proceeding with implementation, ask if we're ready. If additional context would help understand the problem better — ask. Here's what we need:
+
+Run it. While it's running, keep reading to understand the why.
+
+**NOTE:** Do not let Claude Code go into "Plan Mode" — that's a tool setting, not what we're doing here.
+
+Details in this prompt will be covered in later articles. Study it or just run it — we'll get there.
+
+**While it works:** The agent is going to come back with a plan. You need to work with it, section by section, to refine what's needed, clarify conventions and patterns, and fill non-obvious gaps. Ask questions. Challenge assumptions. Get clarification.
+
+You're working to create alignment. Modifying the plan is much cheaper than refactoring. The larger the change, the more time you should spend here.
+
+**How it works:** "Add a REST endpoint." That's a command — and it invokes execution mode. Every decision you didn't make, it guesses. It doesn't look around. It doesn't ask. It just goes.
+
+"Think through how we would add a REST endpoint." That invokes reasoning mode. The agent investigates. Finds existing patterns. Thinks through the approach. Brings you a plan. Implements from its own understanding — not your incomplete shorthand.
+
+Same model. Completely different behavior.
+
+**What's next:**
+
+1. Work through the plan with the agent until it matches your expectations.
+2. Let it implement. One task at a time.
+3. Start with one feature. You should see a difference.
+
+**Not yet:** The plan catches the big stuff — wrong approach, missed constraints, bad assumptions. But implementation details can still get missed. Conventions skipped, edge cases dropped, steps forgotten. We'll cover how to find those gaps in the next article.
