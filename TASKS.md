@@ -1,16 +1,25 @@
 # Tasks
 
-**Last updated:** 2026-04-14
+**Last updated:** 2026-04-15
 
-## Current Priority: Polish Early Phase Articles
+## Current Priority: Write Early Phase Articles
 
-These articles hit the broadest audience. Get them solid before moving on.
+005 and 006 are drafted. Continue through the sequence.
 
-### Remaining on Early Phase
-- [ ] **006 anti-pattern review prompt** — build prompt for experienced users to review past conversations for anti-patterns
-- [ ] **006 exercise** — "create a skill, use it, refine it" pattern. May apply to 014 too.
-- [ ] **Read through 003→004→005→006→014→015→016 as a sequence** — check transitions, story arc, make sure each article leads naturally to the next
-- [ ] **Decide: is 004 its own article or part of 003?**
+### Article Writing
+- [x] **Write article 005** — Set Up Your Project Metadata (~700 words, drafted)
+- [x] **Write article 006** — Evolve Your Project Metadata (~710 words, drafted)
+- [ ] **Iterate on article 014** — The Code Isn't Right. Skeleton aligned (ideas/014-code-isnt-right/v4-skeleton.md). Agent-produced draft exists as guidance only. Needs section-by-section iteration using the established process. Core message: "communicate the problem, not the solution."
+- [ ] **Write article 015** — It Missed Things. Skeleton aligned (ideas/015-it-missed-things/v3-skeleton.md). Core message: "if you check your own work, the agent should check its work too."
+- [ ] **Write article 016** — Agent Won't Follow Process. Skeleton aligned (ideas/016-agent-wont-follow-process/v3-skeleton.md). Core message: "if it's not encoded, it's optional. If it's optional, it gets skipped."
+
+### Remaining Polish on 005/006
+- [ ] **005 minor tweaks** — first sentence of opening still needs work ("How they're going to take our jobs" follow-up)
+- [ ] **006 anti-pattern review prompt** — build prompt for experienced users to review past conversations for anti-patterns (deferred deliverable from idea file)
+
+### Decisions Pending
+- [ ] **003/004** — Are these their own articles, folded into one, or just a brief mention in 005's preamble? They're "foundation" pieces (best model, pick one agent) but 005 is the real entry point.
+- [ ] **Read through full sequence** — once more articles are drafted, check transitions between them
 
 ### Research Tasks
 - [ ] **Anthropic Economic Index report** — read https://www.anthropic.com/research/economic-index-march-2026-report for directive vs collaborative interaction patterns
@@ -21,7 +30,6 @@ These articles hit the broadest audience. Get them solid before moving on.
 - [ ] **Review ideas 007-013** against new template and story arc
 - [ ] **Draft approximate reading order** — place all ideas in the linear progression
 - [ ] **Build out remaining idea folders** — ~25 index-only ideas still need folders when developed
-- [ ] **Flesh out articles (Phase 4)** — write actual article prose starting from 003
 
 ## Backlog / Ideas Captured but Not Developed
 - Orchestration overview article (video ref: https://youtu.be/eT1F2BAZJ64)
@@ -35,8 +43,8 @@ These articles hit the broadest audience. Get them solid before moving on.
 - Publishing structure that supports article insertion
 
 ## Notes for Next Session
-- Read `methodology.md` for how we work
-- Read `CLAUDE.md` for project context
-- Check `ideas/index.md` for the full idea list
-- The early phase articles are in `ideas/003-*/` through `ideas/016-*/` — read the latest version (highest v number) in each
-- We use high-collab mode: generate options, human decides, lock and move
+- Read `articles/WRITING-GUIDE.md` for the article format and writing process
+- Read `articles/005-setup-project-metadata.md` as the reference article (match its format and voice)
+- Article 014 has an agent-produced first draft in `articles/014-code-isnt-right.md` — needs full iteration
+- The writing process: lay out structure as bullets → align on arc → section by section (purpose → options → pick → iterate → lock) → review agents → final pass
+- Memory files capture process and style details for session continuity

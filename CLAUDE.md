@@ -2,56 +2,62 @@
 
 ## What This Is
 
-A content project producing a series of articles teaching developers discrete, actionable steps to dramatically improve their outcomes with AI coding agents (primarily Claude Code, but applicable broadly).
+A series of articles teaching developers to dramatically improve their outcomes with AI coding agents. The series framing: **"Moving your coding agent from intern to senior developer."**
 
-Origin: a talk presented to a dev team (`03_talk.md`). Now expanding into a full article series.
+Origin: a talk presented to a dev team (`sources/03_talk.md`). Now a full article series.
+
+Target audience: developers using AI coding agents (Claude Code, Codex, Gemini CLI, etc.) but frustrated with results or not getting the outcomes they see others getting.
+
+## Current State
+
+**Phase 4** — writing articles. See `STATUS.md` for full history and `TASKS.md` for what's next.
+
+Articles 005 and 006 are drafted. 014 has a first draft needing iteration. The rest of the early phase sequence (003, 004, 015, 016) are in idea stage.
 
 ## How We Work
 
 See `methodology.md` for the full collaboration model. Key points:
 
 - **High-collaboration mode** — human provides taste, context, and judgment; AI provides breadth, speed, and optionality. When those roles invert, output is mediocre.
-- Ideas are captured in `ideas/index.md` using an **append-only model** — add freely, don't remove or reorder until a deliberate restructuring pass.
-- Work in phases: broad capture → add context → order → flesh out → polish. We are currently in early phases.
 - Generate options, not proposals. Branch when asked for more.
 - Lock decisions and move on. Don't revisit locked elements.
-- When new ideas surface during any work, append them to `ideas/index.md` immediately — don't let them evaporate.
+- When new ideas surface during any work, append them to `ideas/index.md` immediately.
+
+For article writing specifically, see `articles/WRITING-GUIDE.md` — the authoritative guide for format, voice, and process.
 
 ## Project Structure
 
-- `README.md` — Public-facing project intro
-- `methodology.md` — Our working process and collaboration model
-- `ideas/` — Idea backlog. `index.md` lists all ideas with status and category tags. Ideas get individual numbered folders (e.g., `001-topic/`) with versioned files as they're developed.
-- `articles/` — Published-ready content. `index.md` is the linear reading order. Each article folder back-references its source idea(s).
-- `sources/` — Reference material that fed the ideas:
+- `STATUS.md` / `TASKS.md` — Session continuity. Read these first.
+- `methodology.md` — Collaboration model
+- `articles/` — Article drafts and writing guide
+  - `WRITING-GUIDE.md` — Article format, voice, and writing process
+  - `005-setup-project-metadata.md` — Reference article (match this format and voice)
+  - `006-evolve-project-metadata.md` — Sequential article template
+  - `014-code-isnt-right.md` — First draft, needs iteration
+- `ideas/` — Idea backlog. `index.md` lists all ideas with status and category tags. Ideas get individual numbered folders (e.g., `001-topic/`) with versioned files.
+- `sources/` — Reference material:
   - `03_talk.md` — Original talk notes (11-step progression)
-  - `high-collab-session-notes/` — Distilled patterns from the resume-building session
+  - `high-collab-session-notes/` — Patterns from the resume-building session
   - `01_notes.md`, `02_organized-ideas.md` — Original brainstorm and organized notes
-  - `prompt-planning-with-beads.md` — Example of spec-first change process
-  - `01_starting-off.md` — Session capture from initial project planning
 
 ## Content Philosophy
 
 - Each article = a **discrete action** a developer can take
-- Frame as: **symptom → root cause → actionable next step**
+- Action first, explanation after. The reader should be doing something within the first few sections.
 - Terse wins. Compress until meaning nearly breaks, back off one step.
-- Target audience: developers using AI tools but frustrated with results, or not getting the outcomes they see others getting
-- Tone: empathetic about the struggle, then no-nonsense actionable ("stop complaining, get to work")
+- Tone: empathetic about the struggle, then blunt about the fix
 - Don't over-polish early. Content and structure first, refinement later.
-
-## Content Structure
-
-- The series is a **linear progression**, NOT organized by category. Ordered by "when should a dev adopt this?"
-- Categories (quality, context, workflow, mindset) are **tags on articles**, not the organizing principle.
-- The progression interleaves topics: some setup, then context, then sub-agents, then quality, then specs, etc.
-- Inserting new articles between existing ones must be easy — no rigid numbering.
-- Small clusters of related articles may sit together where internal order doesn't matter.
+- The series is a **linear progression**, ordered by "when should a dev adopt this?"
+- Categories (quality, context, workflow, mindset) are tags, not the organizing principle.
+- AGENTS.md is the source of truth for agent configuration. CLAUDE.md symlinked to it.
 
 ## Guidelines for Agents
 
+- Read `STATUS.md` and `TASKS.md` first for current state
+- Read `articles/WRITING-GUIDE.md` before any article writing work
 - Read `methodology.md` before starting content work
 - Check `ideas/index.md` for current state of the backlog
 - When new ideas surface during work, append them to `ideas/index.md` immediately
 - Don't restructure the idea tree without explicit discussion
 - Don't polish prose in early phases — focus on content and structure
-- The high-collab session notes contain patterns that are both: (a) how we work on this project, and (b) potential content for later articles about advanced AI collaboration
+- Print article sections inline in conversation — don't make the user read files
