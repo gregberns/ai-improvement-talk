@@ -12,7 +12,7 @@ status: draft
 
 *Each article targets a specific problem. What you're experiencing, why it's happening, and what to do about it — with a prompt you can run immediately.*
 
-*The articles build on each other. If you haven't gone through the previous articles, consider starting at the beginning.*
+*The articles build on each other. If you haven't gone through the previous articles, consider starting [at the beginning](./index.md).*
 
 ---
 

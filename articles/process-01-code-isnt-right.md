@@ -12,9 +12,11 @@ status: draft
 
 *Each article targets a specific problem. What you're experiencing, why it's happening, and what to do about it — with a prompt you can run immediately.*
 
-*The articles build on each other. If you haven't gone through the previous articles, consider starting at the beginning.*
+*The articles build on each other. If you haven't gone through the previous articles, consider starting [at the beginning](./index.md).*
 
 ---
+
+In the previous articles we set up the agent's knowledge — project conventions, patterns, structure. Now we're shifting to how you work with the agent. The next few articles are about your process: how you communicate what needs to be done, how you verify the work, and how you make the routine stuff reliable.
 
 Your PM says you need a new REST endpoint. Straightforward — there are endpoints that do almost the same thing. You tell your agent what to build.
 
