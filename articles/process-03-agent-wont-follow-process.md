@@ -6,7 +6,7 @@ idea: "016"
 status: draft
 ---
 
-# The Agent Won't Follow the Process
+# Process: The Agent Won't Follow the Process
 
 *This is a series about moving your coding agent from intern to senior developer. It's for devs who are already using agents but not getting the results they keep hearing about.*
 

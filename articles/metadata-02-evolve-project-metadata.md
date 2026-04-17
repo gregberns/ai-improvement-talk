@@ -6,7 +6,7 @@ idea: "006"
 status: draft
 ---
 
-# Evolve Your Project Metadata
+# Metadata: Evolve Your Project Metadata
 
 *This is a series about moving your coding agent from intern to senior developer. It's for devs who are already using agents but not getting the results they keep hearing about.*
 

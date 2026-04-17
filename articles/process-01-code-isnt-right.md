@@ -6,7 +6,7 @@ idea: "014"
 status: draft
 ---
 
-# The Code Isn't Right
+# Process: The Code Isn't Right
 
 *This is a series about moving your coding agent from intern to senior developer. It's for devs who are already using agents but not getting the results they keep hearing about.*
 

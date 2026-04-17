@@ -6,7 +6,7 @@ idea: "005"
 status: draft
 ---
 
-# Set Up Your Project Metadata
+# Metadata: Set Up Your Project Metadata
 
 *This is a series about moving your coding agent from intern to senior developer. It's for devs who are already using agents but not getting the results they keep hearing about.*
 
