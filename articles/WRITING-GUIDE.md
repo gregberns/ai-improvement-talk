@@ -76,5 +76,5 @@ The opening varies by article type:
 
 ## Reference
 
-005-setup-project-metadata.md is the template article for entry points.
-006-evolve-project-metadata.md is the template for sequential articles.
+metadata-01-setup-project-metadata.md is the template article for entry points.
+metadata-02-evolve-project-metadata.md is the template for sequential articles.

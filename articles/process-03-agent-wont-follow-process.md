@@ -24,11 +24,11 @@ If it's not encoded, it's optional. If it's optional, it gets skipped. If it kee
 
 > We're seeing a process issue. [Describe what was missed — e.g., "tests weren't run before marking the task complete"]. Look at the current agent configuration — AGENTS files, rules, hooks — and figure out why this wasn't enforced. Propose a fix that ensures this happens consistently. Diagnose the problem and implement the fix.
 
-This combines two techniques we've already discussed. Continual improvement from [Evolve Your Project Metadata](./006-evolve-project-metadata.md) — see a problem in a session, have the agent improve the configuration. And posing the issue as a problem to be solved from [The Code Isn't Right](./014-code-isnt-right.md) — not a command to be obeyed. Think: "Let's figure out why this is happening."
+This combines two techniques we've already discussed. Continual improvement from [Evolve Your Project Metadata](./metadata-02-evolve-project-metadata.md) — see a problem in a session, have the agent improve the configuration. And posing the issue as a problem to be solved from [The Code Isn't Right](./process-01-code-isnt-right.md) — not a command to be obeyed. Think: "Let's figure out why this is happening."
 
 **While it works:** Review what the agent proposes. Does it make sense? Is it targeting the right step? Push back if it's too narrow — "always run `npm test` before committing" is more useful than "run `npm test` after implementing the invite endpoint."
 
-This will take more than one pass. Just like [Evolve Your Project Metadata](./006-evolve-project-metadata.md) — where you looped back through sessions to refine your AGENTS files — you'll need to catch misses over several sessions and fix each one. The configuration gets more reliable each time.
+This will take more than one pass. Just like [Evolve Your Project Metadata](./metadata-02-evolve-project-metadata.md) — where you looped back through sessions to refine your AGENTS files — you'll need to catch misses over several sessions and fix each one. The configuration gets more reliable each time.
 
 **How it works:** Every configuration fix gives the agent better data about how your workflow actually works. Each fix compounds — the agent gets more reliable, session after session.
 

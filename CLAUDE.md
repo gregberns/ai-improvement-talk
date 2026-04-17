@@ -12,7 +12,7 @@ Target audience: developers using AI coding agents (Claude Code, Codex, Gemini C
 
 **Phase 4** — writing articles. See `STATUS.md` for full history and `TASKS.md` for what's next.
 
-Articles 005 and 006 are drafted. 014 has a first draft needing iteration. The rest of the early phase sequence (003, 004, 015, 016) are in idea stage.
+Metadata group (005, 006) and Process group (014, 015, 016) are drafted. See `articles/index.md` for reading order.
 
 ## How We Work
 
@@ -31,9 +31,12 @@ For article writing specifically, see `articles/WRITING-GUIDE.md` — the author
 - `methodology.md` — Collaboration model
 - `articles/` — Article drafts and writing guide
   - `WRITING-GUIDE.md` — Article format, voice, and writing process
-  - `005-setup-project-metadata.md` — Reference article (match this format and voice)
-  - `006-evolve-project-metadata.md` — Sequential article template
-  - `014-code-isnt-right.md` — First draft, needs iteration
+  - `index.md` — Reading order and article groupings
+  - `metadata-01-setup-project-metadata.md` — Reference article (match this format and voice)
+  - `metadata-02-evolve-project-metadata.md` — Sequential article template
+  - `process-01-code-isnt-right.md` — Iterated draft
+  - `process-02-it-missed-things.md` — First draft
+  - `process-03-agent-wont-follow-process.md` — First draft
 - `ideas/` — Idea backlog. `index.md` lists all ideas with status and category tags. Ideas get individual numbered folders (e.g., `001-topic/`) with versioned files.
 - `sources/` — Reference material:
   - `03_talk.md` — Original talk notes (11-step progression)

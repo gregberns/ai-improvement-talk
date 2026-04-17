@@ -24,6 +24,7 @@ Category tags: `[foundation]` `[metadata]` `[context]` `[workflow]` `[quality]` 
 - [014-code-isnt-right](014-code-isnt-right/) `[workflow]` `[mindset]` — "I told it to implement X and it didn't do it right." The sneaky spec — brainstorm, research, plan together, then implement.
 - [015-it-missed-things](015-it-missed-things/) `[workflow]` — "It says it's done but stuff is missing." Self-review against the plan. Plants the seed for the Ralph Loop.
 - [016-agent-wont-follow-process](016-agent-wont-follow-process/) `[workflow]` `[metadata]` — "It won't follow the process I told it!" Where rules/hooks get introduced — to solve git workflow, test running, etc.
+- [017-execution-vs-reasoning](017-execution-vs-reasoning/) `[mindset]` `[workflow]` — "It keeps reinventing things that already exist." Deep dive on execution mode vs. reasoning mode — why commands trigger procedural behavior, how to consciously separate the two phases. The mechanism behind 014.
 
 ## Unrefined — Index Only
 
