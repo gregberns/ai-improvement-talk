@@ -58,8 +58,13 @@ Metadata (005, 006) and Process (014, 015, 016) are drafted. Five articles ready
 - Publishing structure that supports article insertion
 
 ## Notes for Next Session
-- Read `articles/WRITING-GUIDE.md` for the article format and writing process
-- Read `articles/metadata-01-setup-project-metadata.md` as the reference article (match its format and voice)
-- All 5 articles are in `articles/` with group-based naming: `metadata-01-`, `process-01-`, etc.
-- `articles/index.md` has the reading order
+- Read `STATUS.md`, `TASKS.md`, `articles/WRITING-GUIDE.md`, and `articles/index.md` first
+- Read all 5 articles in `articles/` — they use group-based naming: `metadata-01-`, `process-01-`
+- `metadata-01-setup-project-metadata.md` is the reference article for format and voice
 - The writing process: lay out structure as bullets → align on arc → section by section (purpose → options → pick → iterate → lock) → review agents → final pass
+- Review agents run as three personas in parallel: (1) flow/logic, (2) developer reader, (3) writing guide compliance
+- Key terms: "communicate the problem, not the solution" is the headline insight; execution mode vs reasoning mode introduced lightly in process-01, deep dive in 017
+- Don't use "creative work" for implementation
+- Prompts must work when run blindly — they're the product
+- Lean before the fix, depth after — tight above the prompt, teaching below
+- Tone: not accusatory — "you're a good engineer, these patterns are new"
