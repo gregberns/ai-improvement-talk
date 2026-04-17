@@ -6,13 +6,13 @@
 
 *The articles build on each other. If you haven't gone through the previous articles, consider starting at the beginning.*
 
-The implementation is more consistent. Planning works. The review process catches gaps.
+In the past couple articles we've made the implementation more consistent. Planning works. The review process catches gaps.
 
-But now there are consistency problems. The agent says it's done, but it didn't run the tests and there are failures. It compiled but didn't lint. It committed but didn't push.
+But the agent keeps dropping the ball on the basics. It says it's done, but the tests weren't run and there are failures. It compiled but didn't lint. It committed but didn't push. The last mile is unreliable.
 
 Two steps forward, one step back. More babysitting.
 
-**Symptom:** The agent does the implementation well but skips procedural steps. Doesn't compile. Doesn't run tests. Doesn't commit or push. Says "done" when it isn't. You're babysitting the last mile.
+**Symptom:** The agent handles the hard stuff. But the routine stuff — testing, linting, committing, pushing — gets skipped. These are procedural workflows: multiple steps, done consistently, every time. The agent treats them as optional. You're babysitting the last mile.
 
 **Why:** Maybe you've told a hundred agents to run the tests before finishing. Maybe you've even mentioned it in the AGENTS file. But it's not working consistently. That's a signal — the agent doesn't have the instructions, they aren't encoded clearly enough, or they aren't getting reinforced.
 
