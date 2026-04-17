@@ -1,6 +1,6 @@
 # 016 — The Agent Won't Follow the Process (Article Skeleton)
 
-**Status:** Skeleton aligned with Greg, ready for section-by-section writing after 015
+**Status:** Skeleton aligned with the user, ready for section-by-section writing after 015
 
 ## Arc Position
 

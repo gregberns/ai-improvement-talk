@@ -114,8 +114,8 @@ The opening varies by article type:
 ### Process Details
 
 - **Compression is where quality happens.** The cycle: draft → "too wordy" → compress → pick. Almost every section gets shorter, not longer.
-- **When Greg gives raw ideas ("play with that", "something like that"):** take the intent and compose it. Don't copy his words verbatim, don't ignore them. Shape the meaning into clean prose, offer 2-4 options.
-- **Print sections inline in the conversation.** Don't make Greg read files — display content directly.
+- **When the user gives raw ideas ("play with that", "something like that"):** take the intent and compose it. Don't copy his words verbatim, don't ignore them. Shape the meaning into clean prose, offer 2-4 options.
+- **Print sections inline in the conversation.** Don't make the user read files — display content directly.
 - **Review agents work best as three specific personas in parallel:** (1) flow/logic, (2) developer reader specific to where they are in the series, (3) writing guide compliance.
 - **Prompts must work when run blindly.** The prompt is the product. Full pipeline stays in the prompt even if the article only explains part of it. Reader trust depends on producing good results.
 - **Lean before the fix, depth after.** Keep everything above the prompt tight. The teaching happens below — in While it works, How it works.

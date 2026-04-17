@@ -1,6 +1,6 @@
 # 015 — It Missed Things (Article Skeleton)
 
-**Status:** Skeleton aligned with Greg, ready for section-by-section writing after 014
+**Status:** Skeleton aligned with the user, ready for section-by-section writing after 014
 
 ## Arc Position
 

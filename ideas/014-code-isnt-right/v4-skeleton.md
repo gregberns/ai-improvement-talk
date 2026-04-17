@@ -1,6 +1,6 @@
 # 014 — The Code Isn't Right (Article Skeleton)
 
-**Status:** Skeleton aligned with Greg, ready for section-by-section writing
+**Status:** Skeleton aligned with the user, ready for section-by-section writing
 
 ## Arc Position
 
