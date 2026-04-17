@@ -1,7 +1,7 @@
 # Project Status
 
-**Last updated:** 2026-04-15
-**Current phase:** Phase 4 (writing articles) — early phase articles being written
+**Last updated:** 2026-04-16
+**Current phase:** Phase 4 (writing articles) — metadata and process groups drafted
 
 ## What We've Done
 
@@ -78,12 +78,28 @@
 
 5. **Built article skeletons for 014, 015, 016** — section-by-section structure with what each section needs to SAY, where each article starts/stops, and forward pointers between them. Saved as versioned skeleton files in idea folders.
 
+### Session 4 (2026-04-16)
+
+1. **Iterated article 014 section by section** — REST API example in opening, execution vs reasoning mode distinction, collaborative prompt rewrite, tightened to be lean-before-fix/depth-after.
+
+2. **Drafted article 015** — adversarial review process, plan-vs-implementation verification, core loop introduction (plan → implement → review → fix).
+
+3. **Drafted article 016** — encoding procedural workflows, combines 006's continual improvement with 014's problem-posing approach, introduces rules/hooks without requiring reader to learn them.
+
+4. **Created idea 017 (execution vs reasoning)** — deeper dive on the mechanism behind 014. Brain dump captured, v2 fleshed out. Positioned after 016 in progression.
+
+5. **Restructured articles to group-based naming** — files renamed from idea-number format (`005-`, `014-`) to group format (`metadata-01-`, `process-01-`). Created `articles/index.md` with reading order grouped by phase.
+
+6. **Added front matter and formatting** — YAML front matter on all articles (title, group, order, idea, status). Preamble separated by `---`. Section labels on own lines. Group intro paragraph on process-01.
+
+7. **Added preamble links** — entry point has no link, same-group sequential links to previous article, cross-group links to index.
+
+8. **Updated WRITING-GUIDE.md** — added front matter spec, formatting spec, three preamble variants, group intro pattern, opening energy types for all articles, cross-reference convention, article groups section, expanded reference list.
+
 ## What's In Progress
 
-- **Article 014 (The Code Isn't Right)** — skeleton aligned, ready for section-by-section writing
-- **Article 015 (It Missed Things)** — skeleton aligned, queued after 014
-- **Article 016 (Agent Won't Follow Process)** — skeleton aligned, queued after 015
-- **Review feedback on 005** — some items addressed, minor tweaks may remain
+- **Review pass across all 5 articles** — check consistency of voice, format, transitions
+- **005 minor tweaks** — first sentence of opening still needs work
 - **006 anti-pattern review prompt** — deferred from session 1, still TODO
 
 ## Key Decisions Made

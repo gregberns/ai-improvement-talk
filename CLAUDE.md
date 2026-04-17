@@ -51,6 +51,7 @@ For article writing specifically, see `articles/WRITING-GUIDE.md` — the author
 - Tone: empathetic about the struggle, then blunt about the fix
 - Don't over-polish early. Content and structure first, refinement later.
 - The series is a **linear progression**, ordered by "when should a dev adopt this?"
+- Articles are **grouped by phase** (metadata, process, context, etc.). Groups have named intros at the first article. File naming: `group-NN-slug.md`.
 - Categories (quality, context, workflow, mindset) are tags, not the organizing principle.
 - AGENTS.md is the source of truth for agent configuration. CLAUDE.md symlinked to it.
 
