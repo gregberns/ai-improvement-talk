@@ -18,6 +18,8 @@ status: draft
 
 In the previous articles we set up the agent's knowledge — project conventions, patterns, structure. Now we're shifting to how you work with the agent. The next few articles are about your process: how you communicate what needs to be done, how you verify the work, and how you make the routine stuff reliable.
 
+---
+
 Your PM says you need a new REST endpoint. Straightforward — there are endpoints that do almost the same thing. You tell your agent what to build.
 
 "Add a new REST endpoint POST /api/users/invite. Check if the user exists, generate an invitation token, send an email through the notification service, return the status. Use the auth middleware for admin-only access. Add tests."
