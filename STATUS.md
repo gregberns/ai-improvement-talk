@@ -1,7 +1,7 @@
 # Project Status
 
-**Last updated:** 2026-04-16
-**Current phase:** Phase 4 (writing articles) — metadata and process groups drafted
+**Last updated:** 2026-04-17
+**Current phase:** Phase 4 (writing articles) — metadata + process groups drafted, process-04 (deep dive) added
 
 ## What We've Done
 
@@ -96,11 +96,27 @@
 
 8. **Updated WRITING-GUIDE.md** — added front matter spec, formatting spec, three preamble variants, group intro pattern, opening energy types for all articles, cross-reference convention, article groups section, expanded reference list.
 
+### Session 5 (2026-04-17)
+
+1. **Drafted article process-04 (Reasoning vs Execution)** — deep dive on the mechanism behind process-01. Section-by-section iteration, 7 beats locked. Format breaks from standard article structure (no Symptom/Fix/prompt scaffolding).
+
+2. **Captured series thesis** — a paragraph-level thesis for the whole series surfaced while working on 017. Saved to `ideas/series-thesis.md`. Could become series intro, manifesto, or capstone article.
+
+3. **Stubbed idea 018 (directive pattern)** — deferred from 017, needs Anthropic Economic Index research before drafting.
+
+4. **Craft moves worth remembering:**
+   - Rhythm matters for readability. The pat-head/rub-belly beat landed when we matched the reader's physical experience ("See?") instead of opining on how hard it was.
+   - Tempo shifts by beat type — hook beats are punchy, mirror/connective beats need to breathe.
+   - Don't draw lines the reader doesn't need — dropping "some tasks are pure execution" made the article simpler without losing value.
+   - End with practice, not summary — the "watch when you slip into commanding" self-diagnostic was stronger than a payoff closer.
+
 ## What's In Progress
 
-- **Review pass across all 5 articles** — check consistency of voice, format, transitions
+- **Review pass across all 6 articles** — check consistency of voice, format, transitions
 - **005 minor tweaks** — first sentence of opening still needs work
 - **006 anti-pattern review prompt** — deferred from session 1, still TODO
+- **Series thesis** — decide where it lives long-term (intro page, manifesto, capstone)
+- **Idea 018 research** — Anthropic Economic Index directive/iterative patterns
 
 ## Key Decisions Made
 

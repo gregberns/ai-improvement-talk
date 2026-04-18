@@ -1,10 +1,10 @@
 # Tasks
 
-**Last updated:** 2026-04-16
+**Last updated:** 2026-04-17
 
 ## Current Priority: Polish and Publish First Two Groups
 
-Metadata (005, 006) and Process (014, 015, 016) are drafted. Five articles ready for review and refinement.
+Metadata (005, 006) and Process (014, 015, 016, 017) are drafted. Six articles ready for review and refinement.
 
 ### Article Writing — Completed Drafts
 - [x] **metadata-01** — Set Up Your Project Metadata (~700 words, drafted)
@@ -12,11 +12,13 @@ Metadata (005, 006) and Process (014, 015, 016) are drafted. Five articles ready
 - [x] **process-01** — The Code Isn't Right (iterated, drafted)
 - [x] **process-02** — It Missed Things (drafted)
 - [x] **process-03** — The Agent Won't Follow the Process (drafted)
+- [x] **process-04** — Reasoning vs Execution (drafted 2026-04-17, deep-dive format)
 
 ### Review and Polish
-- [ ] **Consistency pass across all 5 articles** — voice, format, transitions between them
+- [ ] **Consistency pass across all 6 articles** — voice, format, transitions between them
 - [ ] **005 minor tweaks** — first sentence of opening still needs work ("How they're going to take our jobs" follow-up)
 - [ ] **006 anti-pattern review prompt** — build prompt for experienced users to review past conversations for anti-patterns (deferred deliverable from idea file)
+- [ ] **Series thesis placement** — decide where `ideas/series-thesis.md` content lives long-term (intro page, manifesto article, capstone)
 
 ### Publishing / Distribution
 - [ ] **Decide where to publish** — blog, GitHub Pages, newsletter, something else?
@@ -36,7 +38,7 @@ Metadata (005, 006) and Process (014, 015, 016) are drafted. Five articles ready
 ### Later Groups
 - [ ] **Write 010-012** — Specs, Ralph Loop, engineering your process
 - [ ] **Write 013** — Progression overview / table of contents
-- [ ] **Write 017** — Execution vs reasoning (deep dive on 014's mechanism)
+- [ ] **Write 018** — Directive vs iterative pattern (needs Anthropic Economic Index research)
 
 ### Research Tasks
 - [ ] **Anthropic Economic Index report** — read https://www.anthropic.com/research/economic-index-march-2026-report for directive vs collaborative interaction patterns

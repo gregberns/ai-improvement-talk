@@ -14,6 +14,7 @@
 3. [The Code Isn't Right](process-01-code-isnt-right.md) — Stop telling the agent what to build. Tell it what problem you're solving. *(idea: 014)*
 4. [It Missed Things](process-02-it-missed-things.md) — Build verification into the process. One pass isn't enough. *(idea: 015)*
 5. [The Agent Won't Follow the Process](process-03-agent-wont-follow-process.md) — Encode procedural workflows. If it's not encoded, it's optional. *(idea: 016)*
+6. [Reasoning vs Execution](process-04-reasoning-vs-execution.md) — Deep dive on the mechanism behind process-01. Two modes, one at a time. *(idea: 017)*
 
 ## Context — (coming soon)
 
@@ -25,4 +26,4 @@
 
 ---
 
-*Last updated: 2026-04-16*
+*Last updated: 2026-04-17*
