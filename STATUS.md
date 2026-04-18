@@ -1,7 +1,7 @@
 # Project Status
 
-**Last updated:** 2026-04-17
-**Current phase:** Phase 4 (writing articles) — metadata + process groups drafted, process-04 (deep dive) added
+**Last updated:** 2026-04-18
+**Current phase:** Phase 4 (writing articles) — metadata + process groups drafted, context-01 added, context group started
 
 ## What We've Done
 
@@ -110,13 +110,35 @@
    - Don't draw lines the reader doesn't need — dropping "some tasks are pure execution" made the article simpler without losing value.
    - End with practice, not summary — the "watch when you slip into commanding" self-diagnostic was stronger than a payoff closer.
 
+### Session 6 (2026-04-18)
+
+1. **Shared series with early readers** — first two groups (metadata + process) sent out.
+
+2. **Decided: consistency pass deferred until more content exists.** Last article took too long; quantity now, polish later.
+
+3. **Drafted article context-01 (Be the Orchestrator)** — first article in the Context group. Section-by-section iteration, ~10 sections to lock. Reframe from original idea: compaction is no longer the forcing function (Anthropic shipped 1M context, no auto-compaction), so the pain is now invisible quality degradation, not session crashes.
+
+4. **Aligned on Context group arc** — "manage the session itself." 007 prevents pollution via delegation; 008 cuts losses when context is poisoned; 009 restarts regularly without starting from scratch.
+
+5. **Deferred 009** — 1M token limit changes the frame significantly. Compaction is edge case, not everyday concern. "Session continuity" needs rethink as "how to restart sessions regularly." Research needed on auto-trigger mechanics.
+
+6. **Clarified Not yet section purpose** — it's for things the article *mentioned but didn't go deep on*, or gaps an attentive reader would notice. Not a scope boundary for things never discussed.
+
+7. **Craft moves from this session:**
+   - Fix should be as small as possible. For 007, the prompt is three sentences: "You are the orchestrator, use sub-agents, delegate your work."
+   - When the symptom shifts (compaction → invisible degradation), the hook has to shift with it. Old hook made the pain visible via a crash. New hook uses "that's fine, right?" to flip an innocent-looking scrollback into the problem.
+   - "Diluting context and burning tokens" is tighter than "burning your context window" — covers both quality and cost in one phrase.
+   - Keep main context clean for *coordination*, not *thinking* — don't set reader up to expect code changes in main thread (worktrees come later).
+
 ## What's In Progress
 
-- **Review pass across all 6 articles** — check consistency of voice, format, transitions
+- **Review pass across all articles** — deferred until more content exists
 - **005 minor tweaks** — first sentence of opening still needs work
 - **006 anti-pattern review prompt** — deferred from session 1, still TODO
 - **Series thesis** — decide where it lives long-term (intro page, manifesto, capstone)
 - **Idea 018 research** — Anthropic Economic Index directive/iterative patterns
+- **Article 008 (Kill bad sessions)** — next up in Context group
+- **Article 009 rethink** — "session continuity" frame needs rework for 1M token reality; research auto-trigger mechanics for context management
 
 ## Key Decisions Made
 

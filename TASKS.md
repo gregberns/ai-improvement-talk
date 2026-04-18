@@ -1,10 +1,10 @@
 # Tasks
 
-**Last updated:** 2026-04-17
+**Last updated:** 2026-04-18
 
-## Current Priority: Polish and Publish First Two Groups
+## Current Priority: Keep Drafting — Context Group
 
-Metadata (005, 006) and Process (014, 015, 016, 017) are drafted. Six articles ready for review and refinement.
+Seven articles drafted across three groups. Consistency pass deferred until more content exists.
 
 ### Article Writing — Completed Drafts
 - [x] **metadata-01** — Set Up Your Project Metadata (~700 words, drafted)
@@ -13,27 +13,27 @@ Metadata (005, 006) and Process (014, 015, 016, 017) are drafted. Six articles r
 - [x] **process-02** — It Missed Things (drafted)
 - [x] **process-03** — The Agent Won't Follow the Process (drafted)
 - [x] **process-04** — Reasoning vs Execution (drafted 2026-04-17, deep-dive format)
+- [x] **context-01** — Be the Orchestrator (drafted 2026-04-18, reframed post-1M)
 
-### Review and Polish
-- [ ] **Consistency pass across all 6 articles** — voice, format, transitions between them
+### Review and Polish (deferred — come back once more content exists)
+- [ ] **Consistency pass across all articles** — voice, format, transitions between them
 - [ ] **005 minor tweaks** — first sentence of opening still needs work ("How they're going to take our jobs" follow-up)
 - [ ] **006 anti-pattern review prompt** — build prompt for experienced users to review past conversations for anti-patterns (deferred deliverable from idea file)
 - [ ] **Series thesis placement** — decide where `ideas/series-thesis.md` content lives long-term (intro page, manifesto article, capstone)
 
 ### Publishing / Distribution
+- [x] **Share with early readers** — first two groups sent out (done 2026-04-18)
 - [ ] **Decide where to publish** — blog, GitHub Pages, newsletter, something else?
-- [ ] **Share with discord group** — articles are now in a consumable format via articles/index.md
-- [ ] **Review reading order end-to-end** — once sharing, check that a fresh reader can follow the progression
+- [ ] **Review reading order end-to-end** — once sharing broadly, check that a fresh reader can follow the progression
 
 ### Decisions Pending
 - [ ] **003/004** — Are these their own articles, folded into one, or just a brief mention in 005's preamble? They're "foundation" pieces (best model, pick one agent) but 005 is the real entry point.
-- [ ] **Group names** — "Metadata" and "Process" are working names. Finalize before publishing.
+- [ ] **Group names** — "Metadata", "Process", "Context" are working names. Finalize before publishing.
 
-### Next Group: Context (007-009)
-- [ ] **Review ideas 007, 008, 009** against article template and story arc
-- [ ] **Write article 007** — Sub-agents / orchestration
-- [ ] **Write article 008** — Kill bad sessions
-- [ ] **Write article 009** — Session continuity
+### Current Group: Context (007-009)
+- [x] **Write article 007** — Be the Orchestrator (done 2026-04-18)
+- [ ] **Write article 008** — Kill bad sessions (next up)
+- [ ] **Rework article 009** — "session continuity" frame needs rethink for 1M token reality. Research auto-trigger mechanics. Pivot frame to "restart sessions regularly."
 
 ### Later Groups
 - [ ] **Write 010-012** — Specs, Ralph Loop, engineering your process
@@ -61,7 +61,7 @@ Metadata (005, 006) and Process (014, 015, 016, 017) are drafted. Six articles r
 
 ## Notes for Next Session
 - Read `STATUS.md`, `TASKS.md`, `articles/WRITING-GUIDE.md`, and `articles/index.md` first
-- Read all 5 articles in `articles/` — they use group-based naming: `metadata-01-`, `process-01-`
+- Read all 7 articles in `articles/` — they use group-based naming: `metadata-01-`, `process-01-`, `context-01-`
 - `metadata-01-setup-project-metadata.md` is the reference article for format and voice
 - The writing process: lay out structure as bullets → align on arc → section by section (purpose → options → pick → iterate → lock) → review agents → final pass
 - Review agents run as three personas in parallel: (1) flow/logic, (2) developer reader, (3) writing guide compliance
@@ -70,3 +70,5 @@ Metadata (005, 006) and Process (014, 015, 016, 017) are drafted. Six articles r
 - Prompts must work when run blindly — they're the product
 - Lean before the fix, depth after — tight above the prompt, teaching below
 - Tone: not accusatory — "you're a good engineer, these patterns are new"
+- **Not yet section is for gaps the attentive reader would notice** (things mentioned but not gone deep on), not for scope-boundary statements about things never discussed
+- **Fix should be minimal** — trust the reader. context-01's prompt is three sentences. Don't over-spec.

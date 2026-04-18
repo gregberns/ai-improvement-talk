@@ -16,9 +16,9 @@
 5. [The Agent Won't Follow the Process](process-03-agent-wont-follow-process.md) — Encode procedural workflows. If it's not encoded, it's optional.
 6. [Reasoning vs Execution](process-04-reasoning-vs-execution.md) — Deep dive on what's really happening when you plan first and execute second. Two modes, one at a time.
 
-## Context — (coming soon)
+## Context — Manage the session itself
 
-*Session management, sub-agents, context hygiene.*
+7. [Be the Orchestrator](context-01-be-the-orchestrator.md) — Delegate research to sub-agents. Keep the main thread clean.
 
 ## Tying It Together — (coming soon)
 
@@ -26,4 +26,4 @@
 
 ---
 
-*Last updated: 2026-04-17*
+*Last updated: 2026-04-18*
