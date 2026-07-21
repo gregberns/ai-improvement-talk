@@ -31,6 +31,10 @@ If you're not motivated to push hard on improving your AI skills, and you still 
 
 Below are some additional things I've added
 
+## Principles, Not Rules
+
+Agents seem to work much better off principles. Rules it treats as laws, and does goofy things because of them. Principles give the agents a direction to travel in. Rules are constraints that stop thinking.
+
 ## Ralph Loop
 
 Do this only once you have optimized (or at least improved) your 'project metadata' (AGENTS.md). This may not work as well as you'd like without updating the agents accessable metadata.
